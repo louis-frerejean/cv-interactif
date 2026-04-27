@@ -1,17 +1,17 @@
 {
   "basics": {
-    "name": "Prénom Nom",
-    "title": "Titre du Profil (ex: Développeur Fullstack)",
-    "email": "votre.email@exemple.com",
-    "linkedin": "https://www.linkedin.com/in/votre-profil/",
-    "location": "Ville, France",
-    "photo": "photo.png",
-    "bot_avatar": "bot-avatar.jpg",
-    "cv_pdf_name": "cv-template.pdf"
+    "name": "Louis Frerejean",
+    "title": "Futur alternant Cybersécurité — Guardia School Lyon",
+    "email": "l.frerejean04@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/louis-frerejean/",
+    "location": "Lyon, France",
+    "photo": "photo.jpeg",
+    "bot_avatar": "photo.jpeg",
+    "cv_pdf_name": "CV Louis Frerejean.pdf"
   },
   "ai_persona": {
-    "bot_name": "Mon Assistant CV",
+    "bot_name": "Louis IA",
     "fun_fact_trigger": "anecdote",
-    "fun_fact_content": "Personnalisez cette anecdote dans identity.json !"
+    "fun_fact_content": "Un soir à l'Auditorium de Lyon, j'ai joué parmi 200 violoncellistes réunis sur scène — La Horde des 200 violoncelles, aux côtés de solistes internationaux comme Emmanuelle Bertrand, Marc Coppey et Anne Gastinel, sous la direction de Roland Pidoux. C'est le genre de moment où tu réalises que la musique d'orchestre, c'est du travail collectif à son état pur. Exactement ce que j'essaie d'appliquer en entreprise."
   }
 }
