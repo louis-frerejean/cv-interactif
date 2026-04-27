@@ -1,42 +1,41 @@
-# 🚀 Agent IA CV Interactif
+# CV Interactif IA — Louis Frerejean
 
-<p align="center">
-  <img src="public/vignette-pack-autonomie.jpg" alt="Pack Autonomie – Votre Agent IA CV (Vidéo + Code) – VibeCoder" width="400">
-</p>
+CV interactif avec chatbot propulsé par Google Gemini. Le chatbot répond aux questions sur mon parcours directement depuis la page.
 
-Crée ton propre CV intelligent en ligne, propulsé par l'IA Google Gemini.
-
-👀 **Exemple** : [cv-jean-noel.netlify.app](https://cv-jean-noel.netlify.app/)
-
-## 🎯 Double objectif pédagogique
-
-1. 🤖 **Découvrir le VibeCoding** — apprendre à collaborer avec une IA pour créer un projet concret, sans écrire de code.
-2. 🎯 **Créer son propre CV Interactif IA** — un assistant intelligent, personnalisé et déployé en ligne, prêt à impressionner les recruteurs.
-
-## 🛠️ Stack technique
+## Stack
 
 | Couche | Technologies |
 |---|---|
-| **Frontend** | React · Vite · TailwindCSS |
-| **Backend** | Netlify Functions |
-| **IA** | Google Gemini API |
-| **Hébergement** | Netlify |
-| **Outils** | Antigravity · Git · Node.js · GitHub CLI |
+| Frontend | React · Vite · TailwindCSS |
+| Backend (prod) | Vercel Serverless Functions (`api/chat.ts`) |
+| Backend (local) | Express + Vite middleware (`server.ts`) |
+| IA | Google Gemini API (`@google/genai`) |
+| Hébergement | Vercel |
 
-## 🏁 Comment commencer
+## Lancer en local
 
-Suis le tutoriel pas à pas → [TUTORIAL.md](TUTORIAL.md)
+```bash
+npm install
+cp .env.example .env   # puis renseigner API_KEY
+npm run dev            # http://localhost:3000
+```
 
-> Aucune compétence en code requise. Le tutoriel te guide de A à Z.
+## Contenu à modifier
 
-## ⚖️ Licence
+Tout le contenu du CV est dans `src/content/` :
 
-Ce projet est distribué sous **double licence** :
-- **Open source / non commercial** → [GPL v3](https://www.gnu.org/licenses/gpl-3.0.html)
-- **Usage commercial** → Licence commerciale requise
+| Fichier | Contenu |
+|---|---|
+| `identity.json` | Nom, email, LinkedIn, photo, nom du PDF |
+| `experiences.md` | Expériences pro, formations, compétences |
+| `portfolio.md` | Projets et réalisations |
+| `greeting.md` | Message d'accueil du chatbot |
+| `instructions.md` | Prompt système du chatbot |
 
-📩 Pour toute demande d'usage commercial : lecinquiemejour@gmail.com
+Les assets publics (photo, PDF) sont dans `public/`.
 
-## ✍️ Auteur
+## Déploiement
 
-**Jean-Noël Lefebvre** — [LinkedIn](https://www.linkedin.com/in/jnlootsidebox/) · [GitHub](https://github.com/lecinquiemejour-code) · lecinquiemejour@gmail.com
+Le projet est connecté à Vercel via GitHub. Chaque `git push` sur `main` déclenche un redéploiement automatique.
+
+Variable d'environnement requise sur Vercel : `API_KEY` (clé Google AI Studio).
