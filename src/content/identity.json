@@ -1,0 +1,17 @@
+{
+  "basics": {
+    "name": "Prénom Nom",
+    "title": "Titre du Profil (ex: Développeur Fullstack)",
+    "email": "votre.email@exemple.com",
+    "linkedin": "https://www.linkedin.com/in/votre-profil/",
+    "location": "Ville, France",
+    "photo": "photo.png",
+    "bot_avatar": "bot-avatar.jpg",
+    "cv_pdf_name": "cv-template.pdf"
+  },
+  "ai_persona": {
+    "bot_name": "Mon Assistant CV",
+    "fun_fact_trigger": "anecdote",
+    "fun_fact_content": "Personnalisez cette anecdote dans identity.json !"
+  }
+}

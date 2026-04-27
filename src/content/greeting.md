@@ -1,0 +1,1 @@
+Bonjour ! Je suis l'assistant IA de **{{USER_FULL_NAME}}**. Je suis ici pour vous présenter son parcours, ses compétences et répondre à vos questions. N'hésitez pas à explorer les différentes sections ou à me poser une question directe !
