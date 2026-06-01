@@ -5,7 +5,7 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
-import { Send, User, ExternalLink, X, Mail, Linkedin, Printer, Download, MapPin, Github } from 'lucide-react';
+import { Send, User, Bot, ExternalLink, X, Mail, Linkedin, Printer, Download, MapPin, Github } from 'lucide-react';
 import { sendMessageToAI } from './services/ai';
 import identity from './content/identity.json';
 import greetingRaw from './content/greeting.md?raw';
@@ -45,8 +45,11 @@ const SUSPICIOUS_PATTERNS = [
 ];
 
 const BotAvatar = () => (
-  <div className="flex-shrink-0 w-9 h-9 rounded-full overflow-hidden border border-blue-500/30 shadow-sm">
-    <img src={botAvatar} alt="Assistant IA" className="w-full h-full object-cover" />
+  <div
+    className="flex-shrink-0 w-9 h-9 rounded-full flex items-center justify-center text-white shadow-sm"
+    style={{ background: 'linear-gradient(135deg, #3b82f6, #8b5cf6)' }}
+  >
+    <Bot className="w-4 h-4" />
   </div>
 );
 
