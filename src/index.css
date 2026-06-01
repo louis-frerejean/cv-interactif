@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* ── Base ── */
+body { font-family: 'Inter', sans-serif; }
+
 /* ── Markdown dark theme ── */
 .markdown-body h1  { @apply text-xl font-bold mb-4 mt-6 text-slate-100; }
 .markdown-body h2  { @apply text-lg font-semibold mb-3 mt-5 text-slate-100; }
@@ -7,19 +10,19 @@
 .markdown-body p   { @apply mb-4 leading-relaxed; }
 .markdown-body ul  { @apply list-disc list-inside mb-4 space-y-1; }
 .markdown-body ol  { @apply list-decimal list-inside mb-4 space-y-1; }
-.markdown-body a   { @apply text-indigo-400 hover:underline; }
+.markdown-body a   { @apply text-blue-400 hover:underline; }
 .markdown-body strong { @apply font-semibold text-slate-100; }
-.markdown-body blockquote { @apply border-l-4 border-indigo-500/30 pl-4 italic text-slate-400 my-4; }
-.markdown-body code { @apply bg-slate-700/60 text-indigo-300 px-1.5 py-0.5 rounded text-sm font-mono; }
+.markdown-body blockquote { @apply border-l-4 border-blue-500/30 pl-4 italic text-slate-400 my-4; }
+.markdown-body code { @apply bg-slate-700/60 text-blue-300 px-1.5 py-0.5 rounded text-sm font-mono; }
 .markdown-body pre  { @apply bg-slate-900 text-slate-200 p-4 rounded-xl overflow-x-auto mb-4 border border-slate-700/50; }
 .markdown-body pre code { @apply bg-transparent text-inherit p-0; }
 .markdown-body *:last-child { @apply mb-0; }
 
 /* Print overrides */
 @media print {
-  .markdown-body a      { color: #4f46e5; }
+  .markdown-body a      { color: #3b82f6; }
   .markdown-body strong { color: #111827; }
-  .markdown-body code   { background: #f3f4f6; color: #4338ca; }
+  .markdown-body code   { background: #f3f4f6; color: #1d4ed8; }
 }
 
 /* ── Dot loading ── */
