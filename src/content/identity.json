@@ -7,7 +7,8 @@
     "location": "Lyon, France",
     "photo": "photo.jpeg",
     "bot_avatar": "photo.jpeg",
-    "cv_pdf_name": "CV Louis Frerejean.pdf"
+    "cv_pdf_name": "CV Louis Frerejean.pdf",
+    "github": "https://github.com/louis-frerejean"
   },
   "ai_persona": {
     "bot_name": "Louis IA",
